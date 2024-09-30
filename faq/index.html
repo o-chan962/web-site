@@ -28,6 +28,10 @@
         <!-- animate -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+        <!-- Slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
         <link rel="stylesheet" href="/assets/style/main.css">
 
     </head>
@@ -46,7 +50,7 @@
                 <!--ナビゲーション、ヘッダーメニュー-->
                 <div class="hamburger-menu header-nav-container">
                     <ul class="header__content-nav-list">
-                        <li><a href="#">トップ</a></li>
+                        <li><a href="/">トップ</a></li>
                         <li><a href="/price">価格・スペック</a></li>
                         <li><a href="/faq">よくあるご質問</a></li>
                     </ul>
@@ -55,12 +59,16 @@
         </header>
         <main>
             <div class="faq-cover">
-                <picture>
-                    <source media="(min-width:768px)" srcset="/assets/image/faq/mainVisual_pc.png">
-                    <img src="/assets/image/faq/mainVisual_sp.png" alt="">
-                </picture>
-                <h2 class="page__title">よくあるご質問</h2>
-                <a href="#" class="page__nav">トップ</a><i class="bi bi-chevron-right"></i><a href="/faq" class="page__nav">よくあるご質問</a>
+                <div class="faq-cover__content">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="/assets/image/faq/mainVisual_pc.png">
+                        <img src="/assets/image/faq/mainVisual_sp.png" alt="">
+                    </picture>
+                    <h2 class="page__title">よくあるご質問</h2>
+                </div>
+                <div class="page__nav">
+                    <a href="#" class="page__nav-link">トップ</a><i class="bi bi-chevron-right"></i><a href="/faq" class="page__nav-link">よくあるご質問</a>
+                </div>
             </div>
             <section id="qa">
                 <div class="qa__section container">
@@ -239,6 +247,9 @@
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- Slick -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
         <!--waypoint-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

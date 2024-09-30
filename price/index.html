@@ -47,7 +47,7 @@
                 <!--ナビゲーション、ヘッダーメニュー-->
                 <div class="hamburger-menu header-nav-container">
                     <ul class="header__content-nav-list">
-                        <li><a href="#">トップ</a></li>
+                        <li><a href="/">トップ</a></li>
                         <li><a href="/price">価格・スペック</a></li>
                         <li><a href="/faq">よくあるご質問</a></li>
                     </ul>
@@ -56,12 +56,16 @@
         </header>
         <main>
             <div class="price-cover">
-                <picture>
-                    <source media="(min-width:768px)" srcset="/assets/image/price/mainvisual_pc.png">
-                    <img src="/assets/image/price/mainvisual_sp.png" alt="">
-                </picture>
-                <h2 class="page__title">価格・スペック</h2>
-                <a href="#" class="page__nav">トップ</a><i class="bi bi-chevron-right"></i><a href="/price" class="page__nav">価格・スペック</a>
+                <div class="price-cover__content">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="/assets/image/price/mainvisual_pc.png">
+                        <img src="/assets/image/price/mainvisual_sp.png" alt="">
+                    </picture>
+                    <h2 class="page__title">価格・スペック</h2>
+                </div>
+                <div class="page__nav">
+                    <a href="#" class="page__nav-link">トップ</a><i class="bi bi-chevron-right"></i><a href="/price" class="page__nav-link">価格・スペック</a>
+                </div>
             </div>
             <section id="gallery">
                 <div class="gallery container">
